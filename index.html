@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Smart Health Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Smart Health Tracker</h2>
+<button onclick="startFasting()">START FASTING</button>
+
+<p class="countdown">Fasting Countdown: <span id="timer">--</span></p>
+
+<div class="card">
+    <h3>Log Daily</h3>
+    <label>Water Intake (cups)</label>
+    <input id="water" type="number">
+
+    <label>Sleep (hours)</label>
+    <input id="sleep" type="number">
+
+    <label>Weight (kg)</label>
+    <input id="weight" type="number">
+
+    <button onclick="saveDaily()">Save</button>
+</div>
+
+<p class="reminder-title">REMINDERS:</p>
+<ul id="reminders"></ul>
+
+<a class="link" href="weekly.html">📊 View Weekly Summary</a>
+
+<script src="app.js"></script>
+</body>
+</html>
